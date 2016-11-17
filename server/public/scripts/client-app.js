@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("#book-list").on('click', '.update', updateBook);
     //update book list to only show selected genre
     $('.genre-select').on('click', updatedGenreList);
-    $("#book-list").on('click', '#bookTitle', updateSpecificBookSection);
+    // $("#book-list").on('click', '#bookTitle', updateSpecificBookSection);
 });
 /**
  * Retrieve books from server and append to DOM
