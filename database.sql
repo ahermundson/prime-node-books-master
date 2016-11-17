@@ -15,4 +15,6 @@ VALUES ('Harry Potter and the Chamber of Secrets', 'JK Rowling', 'fantasy', '6-2
 ('Harry Potter and the Order of the Pheonix', 'JK Rowling', 'fantasy', '6-26-2005', 1, 'Scholastic'),
 ('Harry Potter and the Half-Blood Prince', 'JK Rowling', 'fantasy', '6-26-2005', 1, 'Scholastic'),
 ('Harry Potter and the Deathly Hallows', 'JK Rowling', 'fantasy', '6-26-2003', 1, 'Scholastic'),
-('Harry Potter and the Cursed Child', 'JK Rowling', 'fantasy', '6-26-2003', 1, 'Scholastic');
+('Harry Potter and the Cursed Child', 'JK Rowling', 'fantasy', '6-26-2003', 1, 'Scholastic'),
+('Lawrence in Arabia: War, Deceit, Imperial Folly and the Making of the Modern Middle East', 'Scott Anderson', 'history', '6-3-2014', 1, 'Anchor'),
+('How Everything Became War and the Military Became Everything: Tales from the Pentagon', 'Rosa Brooks', 'non-fiction', '8-9-2016', 1, 'Simon & Schuster');

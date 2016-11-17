@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("#book-list").on('click', '.update', updateBook);
     //update book list to only show selected genre
     $('.genre-select').on('click', updatedGenreList);
-
+    $("#book-list").on('click', '#bookTitle', updateSpecificBookSection);
 });
 /**
  * Retrieve books from server and append to DOM
@@ -112,10 +112,10 @@ function appendBooks(books) {
 
     var convertedDate = book.published.substr(0, 10);
     // console.log(convertedDate);
-
+    // $el.append('<p id="bookTitle">' + book.title + '</p>');
     $el.append('<input type="text" name="title" value="' + book.title + '" />');
     $el.append('<input type="text" name="author" value="' + book.author + '" />');
-    $el.append('<input type="text" name="genre" value="' + book.genre + '" />');
+    $el.append('<input type="text" name="genre" value="' + book.genre.toUpperCase() + '" />');
     var newDate = $('<input type="date" name="published" />');
     newDate.val(convertedDate)
     $el.append(newDate);
@@ -167,4 +167,10 @@ function appendGenres(genres) {
   for (var i = 0; i < genres.length; i++) {
     $('#selectedGenre').append('<option value="' + genres[i].genre + '">' + genres[i].genre.toUpperCase() + '</option>');
   }
+}
+
+
+function updateSpecificBookSection(book) {
+  console.log($(this));
+  $(this).html('<input type="text" name="title" value="' + book.title + '" />');
 }
